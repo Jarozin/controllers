@@ -1,8 +1,10 @@
 package controllers
 
 import (
-	"interfaces"
+	interfaces "github.com/Jarozin/interfaces2"
+	models "github.com/Jarozin/models"
 )
+
 type SerialsFavouritesCtrl struct {
 	SerialsFavouritesService interfaces.IRepoSerialsFavourites
 }

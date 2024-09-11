@@ -1,8 +1,10 @@
 package controllers
 
 import (
-	"interfaces"
+	interfaces "github.com/Jarozin/interfaces2"
+	models "github.com/Jarozin/models"
 )
+
 type SerialsActorsCtrl struct {
 	SerialsActorsService interfaces.IRepoSerialsActors
 }
