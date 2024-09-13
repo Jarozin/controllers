@@ -1,15 +1,15 @@
 package controllers
 
 import (
-	interfaces "github.com/Jarozin/interfaces2"
+	interfaces2 "github.com/Jarozin/interfaces2"
 	models "github.com/Jarozin/models"
 )
 
 type SerialsFavouritesCtrl struct {
-	SerialsFavouritesService interfaces.IRepoSerialsFavourites
+	SerialsFavouritesService interfaces2.IRepoSerialsFavourites
 }
 
-func NewSerialsFavouritesCtrl(service interfaces.IRepoSerialsFavourites) *SerialsFavouritesCtrl {
+func NewSerialsFavouritesCtrl(service interfaces2.IRepoSerialsFavourites) *SerialsFavouritesCtrl {
 	return &SerialsFavouritesCtrl{SerialsFavouritesService: service}
 }
 

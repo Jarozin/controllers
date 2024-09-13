@@ -1,15 +1,15 @@
 package controllers
 
 import (
-	interfaces "github.com/Jarozin/interfaces2"
+	interfaces2 "github.com/Jarozin/interfaces2"
 	models "github.com/Jarozin/models"
 )
 
 type SerialsUsersCtrl struct {
-	SerialsUsersService interfaces.IRepoSerialsUsers
+	SerialsUsersService interfaces2.IRepoSerialsUsers
 }
 
-func NewSerialsUsersCtrl(service interfaces.IRepoSerialsUsers) *SerialsUsersCtrl {
+func NewSerialsUsersCtrl(service interfaces2.IRepoSerialsUsers) *SerialsUsersCtrl {
 	return &SerialsUsersCtrl{SerialsUsersService: service}
 }
 

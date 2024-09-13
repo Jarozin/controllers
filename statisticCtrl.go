@@ -1,15 +1,15 @@
 package controllers
 
 import (
-	interfaces "github.com/Jarozin/interfaces2"
+	interfaces2 "github.com/Jarozin/interfaces2"
 	models "github.com/Jarozin/models"
 )
 
 type StatisticCtrl struct {
-	StatisticService interfaces.IRepoStatistic
+	StatisticService interfaces2.IRepoStatistic
 }
 
-func NewStatisticCtrl(Stservice interfaces.IRepoStatistic) *StatisticCtrl {
+func NewStatisticCtrl(Stservice interfaces2.IRepoStatistic) *StatisticCtrl {
 	return &StatisticCtrl{StatisticService: Stservice}
 }
 

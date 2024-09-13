@@ -1,15 +1,15 @@
 package controllers
 
 import (
-	interfaces "github.com/Jarozin/interfaces2"
+	interfaces2 "github.com/Jarozin/interfaces2"
 	models "github.com/Jarozin/models"
 )
 
 type EpisodesCtrl struct {
-	EpisodesService interfaces.IRepoEpisodes
+	EpisodesService interfaces2.IRepoEpisodes
 }
 
-func NewEpisodesCtrl(service interfaces.IRepoEpisodes) *EpisodesCtrl {
+func NewEpisodesCtrl(service interfaces2.IRepoEpisodes) *EpisodesCtrl {
 	return &EpisodesCtrl{EpisodesService: service}
 }
 

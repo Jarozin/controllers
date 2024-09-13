@@ -1,15 +1,15 @@
 package controllers
 
 import (
-	interfaces "github.com/Jarozin/interfaces2"
+	interfaces2 "github.com/Jarozin/interfaces2"
 	models "github.com/Jarozin/models"
 )
 
 type CommentsCtrl struct {
-	CommentsService interfaces.IRepoComments
+	CommentsService interfaces2.IRepoComments
 }
 
-func NewCommentsCtrl(service interfaces.IRepoComments) *CommentsCtrl {
+func NewCommentsCtrl(service interfaces2.IRepoComments) *CommentsCtrl {
 	return &CommentsCtrl{CommentsService: service}
 }
 

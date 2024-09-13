@@ -1,15 +1,15 @@
 package controllers
 
 import (
-	interfaces "github.com/Jarozin/interfaces2"
+	interfaces2 "github.com/Jarozin/interfaces2"
 	models "github.com/Jarozin/models"
 )
 
 type SeasonsCtrl struct {
-	SeasonsService interfaces.IRepoSeasons
+	SeasonsService interfaces2.IRepoSeasons
 }
 
-func NewSeasonsCtrl(service interfaces.IRepoSeasons) *SeasonsCtrl {
+func NewSeasonsCtrl(service interfaces2.IRepoSeasons) *SeasonsCtrl {
 	return &SeasonsCtrl{SeasonsService: service}
 }
 

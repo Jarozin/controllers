@@ -1,18 +1,18 @@
 package controllers
 
 import (
-	interfaces "github.com/Jarozin/interfaces2"
+	interfaces2 "github.com/Jarozin/interfaces2"
 	models "github.com/Jarozin/models"
 
 	"golang.org/x/crypto/bcrypt"
 )
 
 type UsersCtrl struct {
-	UsersService interfaces.IRepoUsers
-	FavService   interfaces.IRepoFavourites
+	UsersService interfaces2.IRepoUsers
+	FavService   interfaces2.IRepoFavourites
 }
 
-func NewUsersCtrl(Uservice interfaces.IRepoUsers, Fservice interfaces.IRepoFavourites) *UsersCtrl {
+func NewUsersCtrl(Uservice interfaces2.IRepoUsers, Fservice interfaces2.IRepoFavourites) *UsersCtrl {
 	return &UsersCtrl{UsersService: Uservice, FavService: Fservice}
 }
 

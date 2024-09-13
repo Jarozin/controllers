@@ -1,15 +1,15 @@
 package controllers
 
 import (
-	interfaces "github.com/Jarozin/interfaces2"
+	interfaces2 "github.com/Jarozin/interfaces2"
 	models "github.com/Jarozin/models"
 )
 
 type ProducersCtrl struct {
-	ProducersService interfaces.IRepoProducers
+	ProducersService interfaces2.IRepoProducers
 }
 
-func NewProducersCtrl(service interfaces.IRepoProducers) *ProducersCtrl {
+func NewProducersCtrl(service interfaces2.IRepoProducers) *ProducersCtrl {
 	return &ProducersCtrl{ProducersService: service}
 }
 
