@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	interfaces2 "github.com/Jarozin/interfaces2"
+	interfaces2 "github.com/Jarozin/controllers/interfaces"
 	models "github.com/Jarozin/models"
 
 	"golang.org/x/crypto/bcrypt"
